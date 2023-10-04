@@ -46,6 +46,24 @@ h1, h2, h3 {
 
 article {
     margin-bottom: 30px;
+    overflow: hidden; /* Added for the clearfix */
+}
+
+article img {
+    float: left;
+    margin-right: 20px;
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+}
+
+article h3 a {
+    color: #333;
+    text-decoration: none;
+}
+
+article h3 a:hover {
+    text-decoration: underline;
 }
 
 img {
@@ -71,4 +89,83 @@ footer {
     section {
         padding: 30px 10px;
     }
+
+    article img { /* Adjusting blog preview image size for small screens */
+        width: 100px;
+        height: 75px;
+    }
+}
+
+/* Additional CSS for About Page */
+
+#cv {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+#cv h1 {
+    color: #4CAF50;
+}
+
+#cv p {
+    color: #555;
+}
+
+#cv img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+#experience article,
+#education article {
+    margin-bottom: 20px;
+}
+
+.date {
+    font-size: 0.9em;
+    color: #888;
+}
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills li {
+    background-color: #4CAF50;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    #cv img {
+        width: 100px;
+    }
+}
+
+/* Additional CSS for Contact Page */
+#contact {
+    padding: 20px;
+    text-align: center;
+}
+
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact li {
+    margin-bottom: 10px;
+}
+
+#contact a {
+    color: #4CAF50; /* You may change color as per your design */
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
 }
