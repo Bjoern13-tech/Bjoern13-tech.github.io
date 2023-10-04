@@ -169,3 +169,7 @@ footer {
 #contact a:hover {
     text-decoration: underline;
 }
+
+.active {
+    background-color: #3a8d40;
+}
