@@ -6,16 +6,17 @@ body {
 }
 
 header {
-    background-color: #ffffff;  /* Changed to white */
-    padding: 15px;
+    background-color: #ffffff;
+    padding: 15px 50px; /* Increased left and right padding */
     display: flex;  
     justify-content: space-between;  
-    align-items: center;  /* Added to vertically align the items */
+    align-items: center;
 }
 
 .logo img {
     max-width: 150px; 
     height: auto;
+    margin-left: 50px; /* Added extra margin to move the logo away from the left */
 }
 
 nav ul {
@@ -26,17 +27,19 @@ nav ul {
 }
 
 nav li {
-    margin-right: 20px;  
+    margin-right: 35px;  /* Increased right margin for spacing */
 }
 
 nav a {
-    color: #40798C;  /* Changed to light darker blue */
+    color: #40798C;
     text-decoration: none;
     padding: 14px 16px;
+    font-size: 18px; /* Increased font size */
+    line-height: 1.5; /* Added line height */
 }
 
 nav a:hover, .active {
-    color: #30535a;  /* Darker blue for hover state */
+    color: #4e92a8;
 }
 
 #large-image img {
@@ -65,7 +68,7 @@ footer img {
 }
 
 footer a {
-    color: #40798C;  /* Consistent color usage in footer links */
+    color: #4e92a8;  /* Consistent color usage in footer links */
     text-decoration: none;
 }
 
