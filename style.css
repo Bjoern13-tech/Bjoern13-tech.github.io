@@ -2,37 +2,41 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff;  /* Changed to white */
+    background-color: #fff;  
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #ffffff;  /* Changed to white */
     padding: 15px;
-    text-align: center;
-    display: flex;  /* Added for horizontal alignment of logo and navigation */
-    justify-content: space-between;  /* Added to space out logo and navigation */
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  /* Added to vertically align the items */
+}
+
+.logo img {
+    max-width: 150px; 
+    height: auto;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;  /* Changed from overflow: hidden; */
+    display: flex;  
 }
 
 nav li {
-    float: left;
-    margin-right: 20px;  /* Added to give spacing between menu items */
+    margin-right: 20px;  
 }
 
 nav a {
-    color: white;
+    color: #40798C;  /* Changed to light darker blue */
     text-decoration: none;
     padding: 14px 16px;
 }
 
 nav a:hover, .active {
-    background-color: #3a8d40;
+    color: #30535a;  /* Darker blue for hover state */
 }
 
 #large-image img {
@@ -43,11 +47,6 @@ nav a:hover, .active {
 section {
     padding: 50px 15px;
     text-align: center;
-}
-
-.logo img {
-    max-width: 150px; /* You can set this as per your logo's aspect ratio */
-    height: auto;
 }
 
 footer {
@@ -66,7 +65,7 @@ footer img {
 }
 
 footer a {
-    color: #4CAF50;
+    color: #40798C;  /* Consistent color usage in footer links */
     text-decoration: none;
 }
 
